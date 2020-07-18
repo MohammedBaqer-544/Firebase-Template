@@ -23,7 +23,7 @@ extension Networking{
     
     
     /// **This sign up funciton will work on all Users **
-    static func signUp(user: User, password: String, success: ((String)->Void)? = nil, fail: (()->Void)? = nil)
+    static func signUp(user: Person, password: String, success: ((String)->Void)? = nil, fail: (()->Void)? = nil)
     {
         print("👱🏻‍♂️ Creating user ...")
         Auth.auth().createUser(withEmail: user.email, password: password) { (result, error) in

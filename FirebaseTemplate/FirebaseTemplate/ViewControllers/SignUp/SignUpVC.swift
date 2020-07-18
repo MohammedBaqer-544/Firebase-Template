@@ -37,19 +37,19 @@ class SignUpVC: UIViewController {
                         email: email,
                         phoneNumber: phoneNumber)
 
-        if validatePassword(password: password, conformPassword: conformPassword){
-            Networking.signUp(user: user, password: password, success:  { uid in
-                // ✅ Success
-                print("You have signed up successfully")
-                self.performSegue(withIdentifier: "signed", sender: nil)
-            }){
-                // ❌ Failed
-                self.errorMessage(message: "Couldn't sign in, make sure the email and password are correct")
-            }
-        }
-        else{
-            errorMessage(message: "Password are not matching!")
-        }
+//        if validatePassword(password: password, conformPassword: conformPassword){
+//            Networking.signUp(user: user, password: password, success:  { uid in
+//                // ✅ Success
+//                print("You have signed up successfully")
+//                self.performSegue(withIdentifier: "signed", sender: nil)
+//            }){
+//                // ❌ Failed
+//                self.errorMessage(message: "Couldn't sign in, make sure the email and password are correct")
+//            }
+//        }
+//        else{
+//            errorMessage(message: "Password are not matching!")
+//        }
     }
     
     func validatePassword(password: String, conformPassword: String) -> Bool{

@@ -25,3 +25,17 @@ struct SignInCredentials: Encodable
     var email: String
     var password: String
 }
+
+
+struct Person: Codable{
+    
+    var email: String = ""
+    var name: String = ""
+    var phoneNumber: String = ""
+    
+}
+
+
+
+
+
