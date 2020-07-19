@@ -11,7 +11,8 @@ import UIKit
 class MessageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var myTable: UITableView!
-
+    var doctors: [String] = ["د. محمد علي", "د. فاطمة محمد "]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -20,12 +21,12 @@ class MessageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return doctors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "د. محمد علي"
+        cell.textLabel?.text = doctors[indexPath.row]
         cell.accessoryType = .disclosureIndicator
         return cell
     }
@@ -38,23 +39,23 @@ class MessageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let vc = ChatVC()
         vc.title = "المحادثات"
         navigationController?.pushViewController(vc, animated:true)
-//        performSegue(withIdentifier: "chat", sender: indexPath.section)
-
+        //        performSegue(withIdentifier: "chat", sender: indexPath.section)
+        
     }
     
-   /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "chat"{
-            let i = sender as! Int
-            let vc = segue.destination as! ChatVC
-        }
-    }
-    */
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     if segue.identifier == "chat"{
+     let i = sender as! Int
+     let vc = segue.destination as! ChatVC
+     }
+     }
+     */
     
-
+    
 }

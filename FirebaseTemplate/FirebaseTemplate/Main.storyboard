@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BHN-Nb-kW4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D7U-7s-4Pk">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -195,14 +195,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6M-2v-5Ai">
-                                <rect key="frame" x="337" y="44" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign out"/>
-                                <connections>
-                                    <action selector="signOut" destination="8So-Xe-hVL" eventType="touchUpInside" id="A6l-fA-qRw"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Home!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx7-LX-EpG">
                                 <rect key="frame" x="16" y="361" width="343" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -210,6 +202,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6M-2v-5Ai">
+                                <rect key="frame" x="293" y="44" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="signOut" destination="8So-Xe-hVL" eventType="touchUpInside" id="A6l-fA-qRw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dkr-Aa-ugz"/>
@@ -975,6 +975,13 @@
                                     <segue destination="EED-eB-KhF" kind="presentation" modalPresentationStyle="fullScreen" id="vBd-VY-ijP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBU-3L-0KI">
+                                <rect key="frame" x="305" y="35" width="50" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="ON5-2b-uSK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1014,7 +1021,7 @@
             <objects>
                 <viewController id="viG-pT-J58" customClass="CategoriesDetailsVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n0K-oD-WL4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone X-XS-11 Pro – 13" translatesAutoresizingMaskIntoConstraints="NO" id="fsY-Ug-x03">
@@ -1085,6 +1092,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="doctorsBtn:" destination="viG-pT-J58" eventType="touchUpInside" id="wc5-3c-nTj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC6-CS-sXt">
+                                <rect key="frame" x="305" y="35" width="53" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="VEg-gn-UAJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1169,6 +1183,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="IJl-pE-j8q" kind="show" id="iJo-9y-xQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkQ-pq-WU1">
+                                <rect key="frame" x="305" y="35" width="53" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="6go-oV-Kt8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1282,6 +1303,13 @@
                                     <constraint firstAttribute="width" constant="54" id="E6J-EL-RhP"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRn-uv-aLR">
+                                <rect key="frame" x="305" y="9" width="53" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="hZi-Ew-mPA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1514,6 +1542,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kth-jV-j8t">
                                 <rect key="frame" x="18" y="668" width="339" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="signOut" destination="4lF-hv-QRP" eventType="touchUpInside" id="uGK-36-5za"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhW-vL-lOw">
                                 <rect key="frame" x="18" y="722" width="339" height="36"/>
@@ -1522,6 +1553,10 @@
                                     <segue destination="nrG-9r-EXL" kind="presentation" modalPresentationStyle="fullScreen" id="O2z-3K-fRF"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-Au-5BD">
+                                <rect key="frame" x="63" y="617" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="24R-Hv-zNv"/>
@@ -1971,6 +2006,14 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                     <segue destination="4lF-hv-QRP" kind="presentation" modalPresentationStyle="fullScreen" id="5Q5-zv-lkW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qie-R7-fNN">
+                                <rect key="frame" x="16" y="100" width="343" height="678"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">صحتي هو برنامج متكامل من حيث توفر خاصية عداد خطوات المشي وشرب الماء وحساب عدد الأدوية التي تأخذها وغيرها... و ايضا توفر الأطباء للاستشارة عن طريق مكالمتهم محادثةً أو صوتياً أو وجهاً لوجه (فيديو)و توفر صيدلية متكاملة وآخراً وليش اخيراً وجود مكان لتخزين الملفات الطبية ( الأدوية التي تأخذها و الأشعة التي عملتها و الفحوصات والتقارير الطبية ) وغيرها من الكثير من الاشياء</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="chR-jS-bfW"/>
@@ -1978,7 +2021,7 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghi-xs-X2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3438" y="5930"/>
+            <point key="canvasLocation" x="3437.5999999999999" y="5926.847290640394"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7A9-Mm-M04">
@@ -2167,6 +2210,13 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UW-M9-Wc4">
+                                <rect key="frame" x="306" y="36" width="53" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="1LA-hq-5fy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sDy-9R-cXl"/>
@@ -2216,6 +2266,13 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                 <rect key="frame" x="36" y="414" width="316" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KM-es-pc4">
+                                <rect key="frame" x="306" y="35" width="53" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="DoL-Yj-Cfr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1UF-Nf-mZG"/>
@@ -2277,6 +2334,13 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ2-CG-9bo">
+                                <rect key="frame" x="306" y="35" width="53" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="wSv-or-pYF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -2371,6 +2435,13 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                 <rect key="frame" x="10" y="480" width="354" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS6-l7-mT8">
+                                <rect key="frame" x="306" y="35" width="53" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="cp6-Gp-v9C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Eu0-gn-fbB"/>
@@ -2471,7 +2542,7 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8q7-L1-DqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="4485"/>
+            <point key="canvasLocation" x="1201" y="4484"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dtf-QY-E8j">
@@ -2637,6 +2708,13 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                 <color key="textColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-m6-HKb">
+                                <rect key="frame" x="305" y="48" width="55" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="ETU-7F-Rvj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="r6P-4A-kNo"/>
@@ -2714,6 +2792,13 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                     <segue destination="acY-Io-UAa" kind="show" id="w4x-Ou-KOK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgA-nH-Y18">
+                                <rect key="frame" x="309" y="46" width="46" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="rCz-y9-Vy8" kind="presentation" modalPresentationStyle="fullScreen" id="mIH-7s-5C3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hcw-LI-5Or"/>
@@ -2730,7 +2815,7 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
             <objects>
                 <tableViewController id="acY-Io-UAa" customClass="SearchTableVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" id="c5S-N5-Yri">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" placeholder="ابحث هنا" id="KMl-7K-jbj">
@@ -3006,15 +3091,15 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="X25-3L-P9T"/>
-        <segue reference="nPi-jZ-yI3"/>
-        <segue reference="Rpc-Mt-LZs"/>
-        <segue reference="WEp-Vb-VQe"/>
-        <segue reference="UoL-sh-fiv"/>
-        <segue reference="3xI-i2-DGC"/>
+        <segue reference="wPt-ww-TlJ"/>
+        <segue reference="vBd-VY-ijP"/>
+        <segue reference="OQI-vw-d43"/>
+        <segue reference="1LA-hq-5fy"/>
+        <segue reference="cYs-fw-n1I"/>
         <segue reference="PEz-rG-g9X"/>
         <segue reference="HoJ-nL-Yif"/>
-        <segue reference="zZU-2E-4ft"/>
-        <segue reference="4Kt-ZN-q5E"/>
+        <segue reference="RQH-9x-Uel"/>
+        <segue reference="Tc6-Rq-gaz"/>
         <segue reference="bnU-nM-DAt"/>
         <segue reference="hwY-ZP-JH1"/>
         <segue reference="50A-7w-H43"/>

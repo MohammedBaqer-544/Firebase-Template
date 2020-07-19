@@ -26,6 +26,8 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameOfPerson.text = globalName
+
         // Do any additional setup after loading the view.
     }
     

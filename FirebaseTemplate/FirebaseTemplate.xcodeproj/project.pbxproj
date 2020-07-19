@@ -280,6 +280,7 @@
 		76864A5524C4720D0075634C /* Pharmacy */ = {
 			isa = PBXGroup;
 			children = (
+				76E3AD8E24BF67A500C7778F /* ProfileVC.swift */,
 				7656EA1F24C2354100FF40A7 /* PharmacyVC.swift */,
 				76F9544E24C36B7100BE2048 /* PharmacyTableVC.swift */,
 			);
@@ -291,7 +292,6 @@
 			children = (
 				76E3AD5624BF352700C7778F /* HealthProfileVC.swift */,
 				76E3AD8C24BF657000C7778F /* MedicalIDVC.swift */,
-				76E3AD8E24BF67A500C7778F /* ProfileVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
