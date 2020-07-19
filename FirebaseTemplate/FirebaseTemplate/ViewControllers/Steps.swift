@@ -120,7 +120,8 @@ class Steps: UIViewController/*, UIPickerViewDelegate, UIPickerViewDataSource*/ 
                     
                 }
             }
-             
+             globalSteps = stepsLabel.text!
+
         } // end of func displaySteps
         
         
@@ -368,7 +369,7 @@ class Steps: UIViewController/*, UIPickerViewDelegate, UIPickerViewDataSource*/ 
 //        func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
 //            return 50
 //        }
-    
+
     } // end of class ViewController
 
  var globalSteps = ""
