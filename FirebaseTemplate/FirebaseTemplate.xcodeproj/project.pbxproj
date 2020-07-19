@@ -12,6 +12,8 @@
 		7671FD1D24C11A7000F34764 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7671FD1C24C11A7000F34764 /* StoreKit.framework */; };
 		7671FD2124C1234200F34764 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7671FD2024C1234200F34764 /* Settings.swift */; };
 		767D503724BE613B002590F9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D503624BE613B002590F9 /* Category.swift */; };
+		76864A5924C486680075634C /* Medicines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76864A5824C486680075634C /* Medicines.swift */; };
+		76864A5D24C49B7C0075634C /* WaterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76864A5C24C49B7C0075634C /* WaterVC.swift */; };
 		7692737924BA6674000BD4F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7692737824BA6674000BD4F7 /* GoogleService-Info.plist */; };
 		7692737B24BC88F7000BD4F7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692737A24BC88F7000BD4F7 /* SignInViewController.swift */; };
 		7692737D24BC893F000BD4F7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692737C24BC893F000BD4F7 /* SignUpViewController.swift */; };
@@ -90,6 +92,8 @@
 		7671FD1C24C11A7000F34764 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7671FD2024C1234200F34764 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		767D503624BE613B002590F9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		76864A5824C486680075634C /* Medicines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicines.swift; sourceTree = "<group>"; };
+		76864A5C24C49B7C0075634C /* WaterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterVC.swift; sourceTree = "<group>"; };
 		7692737824BA6674000BD4F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7692737A24BC88F7000BD4F7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7692737C24BC893F000BD4F7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +268,24 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		76864A5424C471F10075634C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				76F9549124C3D5FD00BE2048 /* SearchTableVC.swift */,
+				76E3AD2C24BEF12A00C7778F /* SearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		76864A5524C4720D0075634C /* Pharmacy */ = {
+			isa = PBXGroup;
+			children = (
+				7656EA1F24C2354100FF40A7 /* PharmacyVC.swift */,
+				76F9544E24C36B7100BE2048 /* PharmacyTableVC.swift */,
+			);
+			path = Pharmacy;
+			sourceTree = "<group>";
+		};
 		76E3AD2B24BEE7C300C7778F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +317,8 @@
 		D209076124B9ED660069B920 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				76864A5524C4720D0075634C /* Pharmacy */,
+				76864A5424C471F10075634C /* Search */,
 				76F9545224C3758500BE2048 /* Message */,
 				76E3AD2B24BEE7C300C7778F /* Profile */,
 				767D503224BE4504002590F9 /* CollectionView */,
@@ -303,12 +327,9 @@
 				767D502E24BE4465002590F9 /* SignUp */,
 				767D502D24BE444E002590F9 /* SignIn */,
 				769273B624BDD397000BD4F7 /* Steps.swift */,
+				76864A5C24C49B7C0075634C /* WaterVC.swift */,
 				7671FD2024C1234200F34764 /* Settings.swift */,
-				76E3AD2C24BEF12A00C7778F /* SearchVC.swift */,
-				7656EA1F24C2354100FF40A7 /* PharmacyVC.swift */,
-				76F9544E24C36B7100BE2048 /* PharmacyTableVC.swift */,
 				7656EA5824C2603B00FF40A7 /* Steps1.swift */,
-				76F9549124C3D5FD00BE2048 /* SearchTableVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -439,6 +460,7 @@
 				769273B824BDD3A3000BD4F7 /* Date+ToString.swift */,
 				769273BA24BDD3A8000BD4F7 /* Date.swift */,
 				767D503624BE613B002590F9 /* Category.swift */,
+				76864A5824C486680075634C /* Medicines.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -582,6 +604,7 @@
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				76F9540E24C33B0600BE2048 /* Categories.swift in Sources */,
 				76F9541224C33B2500BE2048 /* CategoriesDetailsVC.swift in Sources */,
+				76864A5924C486680075634C /* Medicines.swift in Sources */,
 				D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */,
 				7671FD2124C1234200F34764 /* Settings.swift in Sources */,
 				769273B724BDD397000BD4F7 /* Steps.swift in Sources */,
@@ -603,6 +626,7 @@
 				D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */,
 				769273B924BDD3A3000BD4F7 /* Date+ToString.swift in Sources */,
 				76E3AD2D24BEF12A00C7778F /* SearchVC.swift in Sources */,
+				76864A5D24C49B7C0075634C /* WaterVC.swift in Sources */,
 				767D503724BE613B002590F9 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

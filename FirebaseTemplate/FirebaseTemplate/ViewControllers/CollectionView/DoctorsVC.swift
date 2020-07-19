@@ -26,7 +26,7 @@ class DoctorsVC: UIViewController {
     
     func DoctorDetails() {
         
-        //     self.Doctor.image = UIImage(named: <#T##String#>)
+//        self.Doctor.image = UIImage(named: )
         //       self.briefLabel.text = data.brief
     }
     /*

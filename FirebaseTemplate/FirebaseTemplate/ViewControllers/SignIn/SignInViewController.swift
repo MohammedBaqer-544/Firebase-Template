@@ -7,11 +7,37 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class SignInViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBAction func faceIDBtn(_ sender: Any) {
+        
+        let context: LAContext = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself!"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [weak self] success, authenticationError in
+                
+                DispatchQueue.main.async {
+                    if success {
+                        self?.unlockSecretMessage()
+                    } else {
+                        let ac = UIAlertController(title: "Authentication failed", message: "You could not be verified; please try again.", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        self!.present(ac, animated: true)                            }
+                }
+            }
+        } else {
+            let ac = UIAlertController(title: "Biometry unavailable", message: "Your device is not configured for biometric authentication.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(ac, animated: true)                }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,5 +69,9 @@ class SignInViewController: UIViewController {
         alertController.addAction(okAction)
         present(alertController, animated: true)
     }
+    
+    func unlockSecretMessage() {
+           performSegue(withIdentifier: "go", sender: Any?.self)
+       }
 }
 
