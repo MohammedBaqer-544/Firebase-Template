@@ -12,7 +12,7 @@ import UIKit
 struct Category {
     var categoryName: String = ""
     var doctors: [String]
-    var brief: String
+    var brief: String = ""
 
     
     func categoryImage() -> UIImage {

@@ -31,6 +31,9 @@
 		76F9541224C33B2500BE2048 /* CategoriesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9541024C33B2500BE2048 /* CategoriesDetailsVC.swift */; };
 		76F9541424C33DD300BE2048 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9541324C33DD300BE2048 /* VideoCell.swift */; };
 		76F9544F24C36B7100BE2048 /* PharmacyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9544E24C36B7100BE2048 /* PharmacyTableVC.swift */; };
+		76F9545124C3731F00BE2048 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9545024C3731F00BE2048 /* MessageVC.swift */; };
+		76F9545424C375AE00BE2048 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9545324C375AE00BE2048 /* ChatVC.swift */; };
+		76F9549224C3D5FD00BE2048 /* SearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9549124C3D5FD00BE2048 /* SearchTableVC.swift */; };
 		D209076024B9EA180069B920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* Main.storyboard */; };
 		D209076324B9ED810069B920 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076224B9ED810069B920 /* SignInVC.swift */; };
 		D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076424B9EE8D0069B920 /* SignUpVC.swift */; };
@@ -107,6 +110,9 @@
 		76F9541024C33B2500BE2048 /* CategoriesDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesDetailsVC.swift; sourceTree = "<group>"; };
 		76F9541324C33DD300BE2048 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		76F9544E24C36B7100BE2048 /* PharmacyTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyTableVC.swift; sourceTree = "<group>"; };
+		76F9545024C3731F00BE2048 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		76F9545324C375AE00BE2048 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		76F9549124C3D5FD00BE2048 /* SearchTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableVC.swift; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D209075F24B9EA180069B920 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -268,6 +274,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		76F9545224C3758500BE2048 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				76F9545024C3731F00BE2048 /* MessageVC.swift */,
+				76F9545324C375AE00BE2048 /* ChatVC.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		8378283248B71B8695152817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +295,7 @@
 		D209076124B9ED660069B920 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				76F9545224C3758500BE2048 /* Message */,
 				76E3AD2B24BEE7C300C7778F /* Profile */,
 				767D503224BE4504002590F9 /* CollectionView */,
 				767D503024BE44D9002590F9 /* Omar */,
@@ -292,6 +308,7 @@
 				7656EA1F24C2354100FF40A7 /* PharmacyVC.swift */,
 				76F9544E24C36B7100BE2048 /* PharmacyTableVC.swift */,
 				7656EA5824C2603B00FF40A7 /* Steps1.swift */,
+				76F9549124C3D5FD00BE2048 /* SearchTableVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -547,6 +564,7 @@
 				76F9544F24C36B7100BE2048 /* PharmacyTableVC.swift in Sources */,
 				D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */,
 				76E3AD8F24BF67A500C7778F /* ProfileVC.swift in Sources */,
+				76F9545124C3731F00BE2048 /* MessageVC.swift in Sources */,
 				76F9541124C33B2500BE2048 /* DoctorsVC.swift in Sources */,
 				7692738124BCADFC000BD4F7 /* completeSigningUpVC.swift in Sources */,
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
@@ -558,6 +576,7 @@
 				D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
+				76F9545424C375AE00BE2048 /* ChatVC.swift in Sources */,
 				76E3AD5724BF352700C7778F /* HealthProfileVC.swift in Sources */,
 				7656EA5924C2603B00FF40A7 /* Steps1.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
@@ -574,6 +593,7 @@
 				7692737B24BC88F7000BD4F7 /* SignInViewController.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
+				76F9549224C3D5FD00BE2048 /* SearchTableVC.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
 				769273BB24BDD3A8000BD4F7 /* Date.swift in Sources */,

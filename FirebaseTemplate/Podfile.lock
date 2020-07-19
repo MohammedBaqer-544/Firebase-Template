@@ -1,16 +1,26 @@
 PODS:
   - CodableFirebase (0.2.1)
+  - InputBarAccessoryView (4.3.2):
+    - InputBarAccessoryView/Core (= 4.3.2)
+  - InputBarAccessoryView/Core (4.3.2)
+  - MessageKit (3.1.0):
+    - InputBarAccessoryView (~> 4.3.0)
 
 DEPENDENCIES:
   - CodableFirebase
+  - MessageKit
 
 SPEC REPOS:
   trunk:
     - CodableFirebase
+    - InputBarAccessoryView
+    - MessageKit
 
 SPEC CHECKSUMS:
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
+  InputBarAccessoryView: 7985d418040a05fe894bd4b8328dd43ab35517c3
+  MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
 
-PODFILE CHECKSUM: f66e8f665c2e89a7cd98daf2024ed8eee6c891db
+PODFILE CHECKSUM: e93572fa8530698160b6043511182708059b9a4a
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

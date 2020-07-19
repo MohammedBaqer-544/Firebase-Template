@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pJ1-es-Jba">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yzb-ON-Jxw">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -856,6 +856,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone X-XS-11 Pro – 11" translatesAutoresizingMaskIntoConstraints="NO" id="6Te-iM-li7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slg-Mz-wef">
+                                <rect key="frame" x="16" y="172" width="343" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="7EN-0W-9BC"/>
+                                </constraints>
+                                <state key="normal" title="اضغط هنا للذهاب لصفحة البحث للبحث">
+                                    <color key="titleColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="acY-Io-UAa" kind="show" id="wPt-ww-TlJ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ql-wX-vEv">
                                 <rect key="frame" x="25" y="54" width="23" height="7"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -864,9 +876,11 @@
                                     <segue destination="4lF-hv-QRP" kind="presentation" modalPresentationStyle="fullScreen" id="dUc-Oq-7Yx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SdE-uf-UO5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SdE-uf-UO5">
                                 <rect key="frame" x="305" y="35" width="54" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="39S-sM-0gx"/>
+                                </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="69I-jJ-uFX">
                                 <rect key="frame" x="0.0" y="304" width="375" height="228"/>
@@ -902,24 +916,71 @@
                                     <outlet property="delegate" destination="yzb-ON-Jxw" id="RCv-Ha-xu0"/>
                                 </connections>
                             </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgA-Zu-zVh">
+                                <rect key="frame" x="0.0" y="577" width="375" height="495"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="بدر قاسم" translatesAutoresizingMaskIntoConstraints="NO" id="lOZ-8G-MS4">
+                                        <rect key="frame" x="16" y="280" width="341" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="oqF-tS-J4j"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="أحمد فاضل-1" translatesAutoresizingMaskIntoConstraints="NO" id="ROe-PV-a1u">
+                                        <rect key="frame" x="17" y="144" width="341" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Gaf-wU-ck5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="فاطمة محمد" translatesAutoresizingMaskIntoConstraints="NO" id="DrB-3F-LaX">
+                                        <rect key="frame" x="17" y="8" width="341" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="vcG-cI-9WR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lOZ-8G-MS4" secondAttribute="bottom" constant="87" id="0Zp-t1-fGk"/>
+                                    <constraint firstAttribute="trailing" secondItem="lOZ-8G-MS4" secondAttribute="trailing" constant="18" id="6NK-yN-uIL"/>
+                                    <constraint firstAttribute="width" constant="375" id="7X1-tl-DR9"/>
+                                    <constraint firstItem="DrB-3F-LaX" firstAttribute="trailing" secondItem="ROe-PV-a1u" secondAttribute="trailing" id="KUR-bF-wYe"/>
+                                    <constraint firstItem="DrB-3F-LaX" firstAttribute="top" secondItem="EgA-Zu-zVh" secondAttribute="topMargin" id="Pai-Mf-HGh"/>
+                                    <constraint firstAttribute="trailing" secondItem="DrB-3F-LaX" secondAttribute="trailing" constant="17" id="Rp7-61-qGU"/>
+                                    <constraint firstItem="DrB-3F-LaX" firstAttribute="leading" secondItem="EgA-Zu-zVh" secondAttribute="leading" constant="17" id="aNb-fZ-v9B"/>
+                                    <constraint firstItem="DrB-3F-LaX" firstAttribute="leading" secondItem="ROe-PV-a1u" secondAttribute="leading" id="iht-aK-sTl"/>
+                                    <constraint firstItem="lOZ-8G-MS4" firstAttribute="top" secondItem="ROe-PV-a1u" secondAttribute="bottom" constant="8" id="kGA-gN-HdD"/>
+                                    <constraint firstItem="ROe-PV-a1u" firstAttribute="top" secondItem="DrB-3F-LaX" secondAttribute="bottom" constant="8" id="ntd-bo-vb6"/>
+                                    <constraint firstItem="DrB-3F-LaX" firstAttribute="centerX" secondItem="EgA-Zu-zVh" secondAttribute="centerX" id="wuN-Wy-qUE"/>
+                                    <constraint firstItem="lOZ-8G-MS4" firstAttribute="leading" secondItem="EgA-Zu-zVh" secondAttribute="leading" constant="16" id="zWU-zM-DCN"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="69I-jJ-uFX" firstAttribute="trailing" secondItem="r7Q-8u-Sxs" secondAttribute="trailing" id="2Ga-ZC-KtA"/>
                             <constraint firstItem="6Te-iM-li7" firstAttribute="centerX" secondItem="iLb-QW-Xta" secondAttribute="centerX" id="8rX-oy-f3S"/>
                             <constraint firstItem="69I-jJ-uFX" firstAttribute="centerY" secondItem="iLb-QW-Xta" secondAttribute="centerY" constant="12" id="D3a-vj-oAL"/>
+                            <constraint firstItem="slg-Mz-wef" firstAttribute="trailing" secondItem="SdE-uf-UO5" secondAttribute="trailing" id="F6x-h5-65n"/>
                             <constraint firstItem="69I-jJ-uFX" firstAttribute="centerY" secondItem="iLb-QW-Xta" secondAttribute="centerY" constant="12" id="GMu-CD-d4u"/>
+                            <constraint firstItem="69I-jJ-uFX" firstAttribute="top" secondItem="slg-Mz-wef" secondAttribute="bottom" constant="83" id="LC0-Oj-7zj"/>
                             <constraint firstItem="69I-jJ-uFX" firstAttribute="centerY" secondItem="iLb-QW-Xta" secondAttribute="centerY" constant="12" id="O5q-sS-2kF"/>
+                            <constraint firstItem="SdE-uf-UO5" firstAttribute="top" secondItem="iLb-QW-Xta" secondAttribute="topMargin" constant="-9" id="SQ5-pn-dda"/>
+                            <constraint firstItem="EgA-Zu-zVh" firstAttribute="trailing" secondItem="r7Q-8u-Sxs" secondAttribute="trailing" id="VQV-NI-sJl"/>
+                            <constraint firstItem="slg-Mz-wef" firstAttribute="leading" secondItem="iLb-QW-Xta" secondAttribute="leadingMargin" id="VZm-t5-tkW"/>
                             <constraint firstItem="r7Q-8u-Sxs" firstAttribute="bottom" secondItem="69I-jJ-uFX" secondAttribute="bottom" constant="246" id="a0C-sh-qIm"/>
+                            <constraint firstItem="EgA-Zu-zVh" firstAttribute="top" secondItem="69I-jJ-uFX" secondAttribute="bottom" constant="45" id="kTa-Xr-PDN"/>
+                            <constraint firstItem="EgA-Zu-zVh" firstAttribute="leading" secondItem="r7Q-8u-Sxs" secondAttribute="leading" id="mYU-g6-qdW"/>
+                            <constraint firstAttribute="bottom" secondItem="EgA-Zu-zVh" secondAttribute="bottom" constant="-260" id="nkL-jZ-E1Q"/>
                             <constraint firstItem="6Te-iM-li7" firstAttribute="centerY" secondItem="iLb-QW-Xta" secondAttribute="centerY" id="qPa-N9-nXC"/>
+                            <constraint firstItem="EgA-Zu-zVh" firstAttribute="centerX" secondItem="slg-Mz-wef" secondAttribute="centerX" id="tCF-ac-mHx"/>
                             <constraint firstItem="69I-jJ-uFX" firstAttribute="leading" secondItem="r7Q-8u-Sxs" secondAttribute="leading" id="vnf-or-Xp1"/>
                             <constraint firstItem="69I-jJ-uFX" firstAttribute="centerY" secondItem="iLb-QW-Xta" secondAttribute="centerY" constant="12" id="wUb-T0-9e0"/>
+                            <constraint firstItem="slg-Mz-wef" firstAttribute="top" secondItem="SdE-uf-UO5" secondAttribute="bottom" constant="83" id="zdX-EG-gUl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r7Q-8u-Sxs"/>
                     </view>
                     <navigationItem key="navigationItem" id="EpV-xu-Ezr"/>
                     <connections>
-                        <segue destination="viG-pT-J58" kind="presentation" identifier="goToCategories" modalPresentationStyle="fullScreen" id="zZU-2E-4ft"/>
+                        <segue destination="viG-pT-J58" kind="show" identifier="goToCategories" id="zZU-2E-4ft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCC-TB-MdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -931,7 +992,7 @@
             <objects>
                 <viewController id="viG-pT-J58" customClass="CategoriesDetailsVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n0K-oD-WL4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone X-XS-11 Pro – 13" translatesAutoresizingMaskIntoConstraints="NO" id="fsY-Ug-x03">
@@ -1015,7 +1076,7 @@
                         <outlet property="doctor2" destination="Udg-FO-gfj" id="nDF-HZ-uhd"/>
                         <outlet property="doctor3" destination="h8T-U7-hju" id="Vmx-A5-Hcb"/>
                         <outlet property="doctor4" destination="8h0-pj-gER" id="zxb-MV-blf"/>
-                        <segue destination="TTy-Dd-eVG" kind="presentation" identifier="goToDoctor" modalPresentationStyle="fullScreen" id="dND-kk-uQc"/>
+                        <segue destination="TTy-Dd-eVG" kind="show" identifier="goToDoctor" id="dND-kk-uQc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWL-gw-Mp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1027,7 +1088,7 @@
             <objects>
                 <viewController id="TTy-Dd-eVG" customClass="DoctorsVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9DF-ps-Qtf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone X-XS-11 Pro – 12" translatesAutoresizingMaskIntoConstraints="NO" id="KnN-sd-Npj">
@@ -1050,7 +1111,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHy-p2-7aO">
-                                <rect key="frame" x="16" y="323" width="343" height="90"/>
+                                <rect key="frame" x="16" y="323" width="343" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">د. محمد علي هو دكتور أسنان يمتلك  أكثر من ٣ سنوات خبرة في مجال الطب العام وطب الأطفال وطب الجراحة وغيره، يستقبل د. محمد علي جميع الاستشارات المتعلقة بمجاله</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1081,6 +1142,13 @@
                                 <rect key="frame" x="34" y="731" width="306" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qu-TQ-Fc7">
+                                <rect key="frame" x="146" y="220" width="29" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="IJl-pE-j8q" kind="show" id="iJo-9y-xQs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Zxy-bI-Knj"/>
@@ -1093,7 +1161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KBa-jq-7pu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="3783"/>
+            <point key="canvasLocation" x="1200.8" y="3782.5123152709361"/>
         </scene>
         <!--PharmacyVC-->
         <scene sceneID="og9-fJ-g5c">
@@ -1153,7 +1221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSl-bB-lAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4228" y="3782.5123152709361"/>
+            <point key="canvasLocation" x="5868" y="3782.5123152709361"/>
         </scene>
         <!--Pharmacy TableVC-->
         <scene sceneID="IyR-JD-EGD">
@@ -1212,7 +1280,38 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkk-Jg-dhA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5189.6000000000004" y="3782.5123152709361"/>
+            <point key="canvasLocation" x="6572" y="3782.5123152709361"/>
+        </scene>
+        <!--MessageVC-->
+        <scene sceneID="CpR-K9-fLh">
+            <objects>
+                <viewController id="oRA-Gf-tpW" customClass="MessageVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qeJ-3J-CGF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FVL-C3-vtO">
+                                <rect key="frame" x="0.0" y="56" width="375" height="668"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FVL-C3-vtO" firstAttribute="leading" secondItem="4dQ-xJ-lOh" secondAttribute="leading" id="DMc-0s-UvB"/>
+                            <constraint firstItem="4dQ-xJ-lOh" firstAttribute="trailing" secondItem="FVL-C3-vtO" secondAttribute="trailing" id="S2u-qF-aSH"/>
+                            <constraint firstItem="FVL-C3-vtO" firstAttribute="top" secondItem="4dQ-xJ-lOh" secondAttribute="top" id="ZUV-J9-cia"/>
+                            <constraint firstItem="4dQ-xJ-lOh" firstAttribute="bottom" secondItem="FVL-C3-vtO" secondAttribute="bottom" id="asR-ur-5GL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4dQ-xJ-lOh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gBK-tg-btF"/>
+                    <connections>
+                        <outlet property="myTable" destination="FVL-C3-vtO" id="cMv-9Y-ovZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYU-sV-J8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2764" y="3783"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bS8-YX-Anq">
@@ -1245,7 +1344,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXb-1D-UKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2673" y="3783"/>
+            <point key="canvasLocation" x="4316" y="3782.5123152709361"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Df6-3p-eYa">
@@ -1290,7 +1389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpf-O8-puN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3439" y="3783"/>
+            <point key="canvasLocation" x="5079.1999999999998" y="3782.5123152709361"/>
         </scene>
         <!--Settings-->
         <scene sceneID="KjM-Ei-029">
@@ -1796,7 +1895,7 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufQ-yy-ZXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-303" y="4469"/>
+            <point key="canvasLocation" x="-303" y="4542"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2j9-Gh-C0M">
@@ -2405,7 +2504,7 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                     <color key="titleColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wq7-Ge-hzr" kind="presentation" modalPresentationStyle="fullScreen" id="S18-li-Hlg"/>
+                                    <segue destination="acY-Io-UAa" kind="show" id="DTS-el-3zt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2421,7 +2520,7 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mup-M0-Wzk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1224.8" y="3039.9014778325122"/>
+            <point key="canvasLocation" x="1257" y="3040"/>
         </scene>
         <!--الصفحات-->
         <scene sceneID="LLS-ez-rbS">
@@ -2482,7 +2581,7 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                                     <color key="titleColor" red="0.78039747479999999" green="0.78038269280000006" blue="0.78039270640000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wq7-Ge-hzr" kind="presentation" modalPresentationStyle="fullScreen" id="3zc-Hr-iUe"/>
+                                    <segue destination="acY-Io-UAa" kind="show" id="w4x-Ou-KOK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2496,44 +2595,43 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
             <point key="canvasLocation" x="1949.5999999999999" y="3039.9014778325122"/>
         </scene>
         <!--البحث-->
-        <scene sceneID="HQL-bG-6aQ">
+        <scene sceneID="yVj-Q0-hDZ">
             <objects>
-                <viewController id="Wq7-Ge-hzr" customClass="SearchVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zeS-zQ-7cy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                <tableViewController id="acY-Io-UAa" customClass="SearchTableVC" customModule="FirebaseTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" id="c5S-N5-Yri">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone X-XS-11 Pro – 10" translatesAutoresizingMaskIntoConstraints="NO" id="bL7-t4-4jW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtT-mk-O5z">
-                                <rect key="frame" x="25" y="54" width="23" height="7"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Group 1603"/>
-                                <connections>
-                                    <segue destination="4lF-hv-QRP" kind="presentation" modalPresentationStyle="fullScreen" id="ADV-gY-Tcb"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Fn-jB-cR8">
-                                <rect key="frame" x="299" y="40" width="54" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3Q-aH-4m8">
-                                <rect key="frame" x="62" y="139" width="313" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="KTL-Ac-9wn"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="البحث" image="magnifyingglass" catalog="system" id="inf-0x-WOq"/>
-                    <navigationItem key="navigationItem" id="oLc-bY-3DQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KRS-hh-Is9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="ابحث هنا" id="KMl-7K-jbj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dnE-es-Bp5">
+                                <rect key="frame" x="0.0" y="72" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dnE-es-Bp5" id="xan-Da-EJk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="acY-Io-UAa" id="i9l-CZ-qPA"/>
+                            <outlet property="delegate" destination="acY-Io-UAa" id="S8O-xN-pjz"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="البحث" image="magnifyingglass" catalog="system" id="bou-7W-Gh7"/>
+                    <navigationItem key="navigationItem" id="iEy-U8-Fbg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="KMl-7K-jbj" id="iJ6-Tq-hz2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0U-zk-Dd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2764" y="3039.9014778325122"/>
+            <point key="canvasLocation" x="2764" y="3040"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vxM-vH-jcv">
@@ -2549,22 +2647,41 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
                     <connections>
                         <segue destination="laM-SH-Iaq" kind="relationship" relationship="viewControllers" id="WEp-Vb-VQe"/>
                         <segue destination="EED-eB-KhF" kind="relationship" relationship="viewControllers" id="Rpc-Mt-LZs"/>
-                        <segue destination="Wq7-Ge-hzr" kind="relationship" relationship="viewControllers" id="Ca2-o0-1ni"/>
+                        <segue destination="acY-Io-UAa" kind="relationship" relationship="viewControllers" id="nPi-jZ-yI3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itN-ps-TZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477.60000000000002" y="3039.9014778325122"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m41-t5-H9F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IJl-pE-j8q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dds-E9-AYn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y8Q-ze-dHS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oRA-Gf-tpW" kind="relationship" relationship="rootViewController" id="ifl-TK-wKl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaV-0G-Whj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950" y="3783"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="X25-3L-P9T"/>
-        <segue reference="3zc-Hr-iUe"/>
-        <segue reference="9fr-KC-AKV"/>
-        <segue reference="g4R-fF-vw6"/>
-        <segue reference="3xI-i2-DGC"/>
-        <segue reference="Tb0-rb-gxT"/>
-        <segue reference="RQH-9x-Uel"/>
+        <segue reference="wPt-ww-TlJ"/>
+        <segue reference="WEp-Vb-VQe"/>
+        <segue reference="FhR-s3-flk"/>
+        <segue reference="dUc-Oq-7Yx"/>
+        <segue reference="HoJ-nL-Yif"/>
+        <segue reference="zZU-2E-4ft"/>
         <segue reference="Tc6-Rq-gaz"/>
         <segue reference="hT9-XS-CEG"/>
         <segue reference="hwY-ZP-JH1"/>
@@ -2588,7 +2705,6 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
         <image name="button-4" width="166.66667175292969" height="44.333332061767578"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="iPhone X-XS-11 Pro – 10" width="375" height="812"/>
         <image name="iPhone X-XS-11 Pro – 11" width="375" height="812"/>
         <image name="iPhone X-XS-11 Pro – 12" width="375" height="812"/>
         <image name="iPhone X-XS-11 Pro – 13" width="375" height="812"/>
@@ -2621,6 +2737,9 @@ $10,000 ، سيتم تحديد حقك في جلسة استماع ببموجب ق
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+        <image name="أحمد فاضل-1" width="360" height="120"/>
+        <image name="بدر قاسم" width="360" height="120"/>
         <image name="جراحة السمنة" width="149" height="175"/>
+        <image name="فاطمة محمد" width="360" height="120"/>
     </resources>
 </document>
